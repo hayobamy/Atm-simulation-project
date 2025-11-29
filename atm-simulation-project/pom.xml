@@ -41,7 +41,7 @@
     <repository>
         <id>nexus-releases</id>
         <name>Nexus Releases</name>
-        <url>http://13.49.74.50:8081/repository/nuget-hosted/</url>
+        <url>http://13.49.74.50:8081/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
         <id>nexus-snapshots</id>
