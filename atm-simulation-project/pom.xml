@@ -16,15 +16,12 @@
     </properties>
 
     <dependencies>
-        <!-- Servlet API for webapp -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- JUnit for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -45,9 +42,20 @@
             <id>nexus-releases</id>
             <url>http://13.49.74.50:8081/repository/maven-releases/</url>
         </repository>
-
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
