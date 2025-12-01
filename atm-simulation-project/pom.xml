@@ -47,12 +47,7 @@
             <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-         <configuration>
-    <username>jenkins</username>
-    <password>admin123</password>
-    <url>http://16.171.236.166:8080//manager/text</url>
-</configuration>
-
+        
 
     <build>
         <plugins>
