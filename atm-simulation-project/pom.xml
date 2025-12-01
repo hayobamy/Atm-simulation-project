@@ -7,6 +7,7 @@
     <groupId>com.example</groupId>
     <artifactId>atm-simulation</artifactId>
     <version>1.0.0</version>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -14,19 +15,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-         <packaging>war</packaging>
-
-<dependencies>
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>4.0.1</version>
-        <scope>provided</scope>
-    </dependency>
-</dependencies>
-
-
     <dependencies>
+        <!-- Servlet API for webapp -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- JUnit for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -35,34 +33,21 @@
         </dependency>
     </dependencies>
 
-     <repositories>
-    <repository>
-        <id>nexus</id>
-        <url>http://13.49.74.50:8081/repository/maven-public/</url>
-    </repository>
-</repositories>
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <url>http://13.49.74.50:8081/repository/maven-public/</url>
+        </repository>
+    </repositories>
 
-<distributionManagement>
-    <repository>
-        <id>nexus-releases</id>
-        <url>http://13.49.74.50:8081/repository/maven-releases/</url>
-    </repository>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://13.49.74.50:8081/repository/maven-releases/</url>
+        </repository>
 
-    <snapshotRepository>
-        <id>nexus-snapshots</id>
-        <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-</distributionManagement>
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0</version>
-            </plugin>
-        </plugins>
-    </build>
-
-</project>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionMana
