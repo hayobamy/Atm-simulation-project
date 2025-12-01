@@ -23,30 +23,22 @@
         </dependency>
     </dependencies>
 
-         <repositories>
-                  
+     <repositories>
     <repository>
         <id>nexus</id>
-        <url>http://your-nexus-server:8081/repository/maven-public/</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>true</enabled>
-        </snapshots>
+        <url>http://13.49.74.50:8081/repository/maven-public/</url>
     </repository>
 </repositories>
 
-         <distributionManagement>
+<distributionManagement>
     <repository>
         <id>nexus-releases</id>
-        <name>Nexus Releases</name>
         <url>http://13.49.74.50:8081/repository/maven-releases/</url>
     </repository>
+
     <snapshotRepository>
         <id>nexus-snapshots</id>
-        <name>Nexus Snapshots</name>
-        <url>http://13.49.74.50:8081/repository/nuget-hosted/</url>
+        <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 
