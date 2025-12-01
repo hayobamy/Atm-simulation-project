@@ -50,4 +50,4 @@
             <id>nexus-snapshots</id>
             <url>http://13.49.74.50:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
-    </distributionMana
+    </distributionManagement>
